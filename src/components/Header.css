@@ -1,0 +1,87 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; /* Increased padding */
+  background-color: #41292C;
+  color: white;
+  position: fixed; /* Makes the header fixed */
+  width: 100%;
+  top: 0; /* Positions it at the top */
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0; /* Ensures no default margin */
+  padding: 0; /* Ensures no default padding */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Increased padding for links */
+  font-size: 1.2em; /* Increased font size for links */
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: grey; /* Highlights the current section */
+}
+
+.nav-item-box {
+  background-color: white;
+  color: #41292C; /* Dark color for text and icons */
+  padding: 5px 20px;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between name and icons */
+}
+.header-name {
+  color:#41292C;
+  
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  text-align: right;
+  font-size: 1.5em; /* Increased font size for header name */
+}
+
+h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left; 
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .header-name {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+}
+
+.icon-link {
+  color: #41292C;
+  padding: 2px 10px; /* Adjusted padding for icons */
+  font-size: 1.2em; /* Increased font size for icons */
+  transition: color 0.3s;
+}
+
+.icon-link:hover {
+  color: grey; /* Change the color when hovering over the icon */
+}

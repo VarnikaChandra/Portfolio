@@ -1,0 +1,63 @@
+/* src/components/About.css */
+
+.section {
+  padding: 60px 20px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-top:100px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-image img {
+  max-width: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100px; /* Adjust size for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    text-align: center;
+    min-width:100%;
+  }
+}
+p{
+  font-size:20px;
+
+}
+#typed-output {
+  font-size: 2em;
+  color: #41292C;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.Typed__cursor {
+  display: inline; /* Ensure the cursor is inline */
+  vertical-align: text-bottom; /* Adjust vertical alignment */
+}

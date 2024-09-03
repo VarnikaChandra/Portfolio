@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color:#41292C;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to headings */
+  }
+  
+  .section {
+    padding: 60px 20px;
+    margin:20px 0;
+    text-align:center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Add space between cards if needed */
+    text-align: center; /* Center the content of each project */
+  }
+  
+  footer {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .flip-card h3 {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to headings */
+    margin-bottom: 10px; /* Add space between title and description */
+  }
+
+  

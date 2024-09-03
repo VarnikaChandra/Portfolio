@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: grey; /* Change this to your desired active color */
+}
+
+.section{
+  padding: 60px 20px;
+  margin: 40px 0; /* Adds space between sections */
+  border-radius: 10px; /* Optional: Adds rounded corners to sections */
+  box-shadow: 0 4
+
+}

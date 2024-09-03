@@ -1,0 +1,34 @@
+/* src/components/Projects.css */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .project:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

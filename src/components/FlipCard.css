@@ -1,0 +1,60 @@
+/* FlipCard.css */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+    padding: 10px; /* Add padding to maintain spacing */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    height: calc(100% - 20px); /* Adjust height to account for padding */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column; /* Ensure column layout */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px; /* Add padding to content */
+  }
+  
+  .flip-card-front {
+    background-color: #f1f1f1;
+  }
+  
+  .flip-card-back {
+    background-color:  #41292C;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card a {
+    color: white; 
+    /*color:gray;*/
+  }
+
+  .flip-card a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color:#FD3E81;
+  }
+  .flip-card h3 {
+    margin-bottom: 10px; 
+  }
+  
