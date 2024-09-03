@@ -18,7 +18,7 @@ const Projects = () => {
     },
     {
       title: "Analyzing Coffee Consumption in the US",
-      shortDescription: "Analyzed coffee consumption patterns across the United States. The dataset included variables such as coffee ratings, roasters, roast types, origins, and pricing data.",
+      shortDescription: "Analyzed coffee consumption patterns across the United States. Included variables such as coffee ratings, roasters, roast types, origins, and pricing data.",
       link: "https://github.com/yourusername/project2"
     }
    
