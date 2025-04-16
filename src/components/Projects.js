@@ -19,7 +19,18 @@ const Projects = () => {
     {
       title: "Analyzing Coffee Consumption in the US",
       shortDescription: "Analyzed coffee consumption patterns across the United States. Included variables such as coffee ratings, roasters, roast types, origins, and pricing data.",
-      link: "https://github.com/yourusername/project2"
+      description: "Currently private under updating...."
+    },
+    {
+    title: "PERN Finance Tracker",
+    shortDescription: "First PERN project.",
+    description: "Currently private under updating...."
+    },
+    {
+      title:"Instagram Clone", 
+      shortDescription: "EECS 485 project",
+      description: "Private github link due to course policy.",
+      link: "https://github.com/VarnikaChandra/p3-insta485-clientside"
     }
    
 
