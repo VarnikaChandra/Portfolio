@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Hinglish Translator",
       shortDescription: "Hinglish a combination of Hindi and English commonly used in messaging amongst Hindi speakers.",
       description: "React/HTML/JavaScript/CSS",
-      link: ""
+      link: "https://github.com/VarnikaChandra/Hinglish-Translator"
     },
     {
       title: "Exploring Indian Dance",
