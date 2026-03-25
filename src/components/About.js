@@ -1,52 +1,66 @@
-// src/components/About.js
-import React, { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
-import './About.css';
+import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import Typed from "typed.js";
+import "./About.css";
+import schoolPic from "./school_pic.jpeg";
 
 function About() {
   const typedElement = useRef(null);
 
   useEffect(() => {
-    if (typedElement.current) {
-      const options = {
-        strings: ["Hi, I'm Varnika!"],
-        typeSpeed: 50,
-        backSpeed: 25,
-        loop: false,
-        fadeOut:true,
-        backDelay:1500,
-        startDelay:500,
-        smartBackspace:true, /* only backspaces what does not match*/ 
-        /*cursor stuff*/
-        showCursor: false,
-        cursorChar: '...',
-      };
+    const typed = new Typed(typedElement.current, {
+      strings: ["developer.", "engineer.", "designer.", "problem-solver."],
+      typeSpeed: 60,
+      backSpeed: 35,
+      backDelay: 1400,
+      startDelay: 300,
+      smartBackspace: true,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+    });
 
-      const typed = new Typed(typedElement.current, options);
-
-      // Destroy Typed instance during cleanup to stop animation if component unmounts
-      return () => {
-        typed.destroy();
-      };
-    }
+    return () => {
+      typed.destroy();
+    };
   }, []);
 
   return (
-    <section id="about" className="section">
-      <div className="about-content">
-        <div className="about-image">
-          <img src="https://varnikachandra.github.io/Portfolio/images/school_pic.jpeg" alt="Varnika Chandra" />
-        </div>
+    <div className="about-page">
+      <div className="about-card">
+        <img
+          src={schoolPic}
+          alt="Portrait of Varnika Chandra"
+          className="about-image"
+        />
+
         <div className="about-text">
-          <h2 id="typed-output" ref={typedElement}>...</h2>
-          <p>
-             I am a third-year student at the University of Michigan studying Computer Science with a minor in User Experience and Design.
-            I am looking to pursue a career in Software Development. 
-            Outside of school, I love to dance and read in my free time! Thank you for visiting my page :)
+          <h1>
+            Hi, I’m Varnika, a{" "}
+            <span ref={typedElement} className="typed-word"></span>
+          </h1>
+
+          <p className="about-subtitle">
+            Computer Science student at the University of Michigan focused on
+            building thoughtful, user-centered digital experiences.
           </p>
+
+          <p>
+            I’m a fourth-year Computer Science student pursuing a minor in User
+            Experience Design. I’m interested in software development,
+            full-stack applications, and creating technology that is both
+            functional and intuitive. Outside of academics, I enjoy dance,
+            reading, and bringing creativity into the way I approach design and
+            problem-solving.
+          </p>
+
+          <div className="about-buttons">
+            <Link to="/projects" className="primary-btn">View Projects</Link>
+            <Link to="/contact" className="secondary-btn">Contact Me</Link>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
