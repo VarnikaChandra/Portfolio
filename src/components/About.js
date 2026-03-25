@@ -9,7 +9,7 @@ function About() {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ["developer.", "engineer.", "designer.", "problem-solver."],
+      strings: ["developer.", "intern.","engineer.", "student.", "designer."],
       typeSpeed: 60,
       backSpeed: 35,
       backDelay: 1400,
@@ -55,8 +55,8 @@ function About() {
           </p>
 
           <div className="about-buttons">
-            <Link to="/projects" className="primary-btn">View Projects</Link>
-            <Link to="/contact" className="secondary-btn">Contact Me</Link>
+            <Link to="/projects" className="secondary-btn">View Projects</Link>
+            <Link to="/resume" className="secondary-btn">View Resume</Link>
           </div>
         </div>
       </div>
